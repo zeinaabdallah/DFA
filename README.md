@@ -37,6 +37,28 @@ The provided Makefile allows you to build the project and run unit tests. Below 
 - **clean**: Removes generated executables and log directory.
 - **debug**: Builds the project with debugging information.
 
+## Building the Project
+#### To build the project:
+Navigate to the `build` directory and run: 
+`make`
+
+- This will compile the source files and create the message-sender executable.
+
+#### To run the program:
+The executable `./message-sender` requires three command-line arguments:
+
+1. **numMessages**: The number of messages to send.
+2. **payloadLength**: The length of each message's payload.
+3. **channelWidth**: The width of the channel.
+
+#### Example Usage:
+`./message-sender <numMessages> <payloadLength> <channelWidth>`
+
+#### Example:
+`./message-sender 5 10 20`
+
+This command will send 5 messages, each with a payload length of 10 bytes, using a channel width of 20 bytes. 
+
 ### Logging
 The application will generate log files in the `build/log` directory. Each log file will contain the messages that are "sent" (logged) during execution.
 
@@ -46,12 +68,12 @@ The application will generate log files in the `build/log` directory. Each log f
    make
 2. **Run the executable**:
    ```bash
-    ./message-sender
+   ./message-sender
 
 3. **Run tests**:
    ```bash
     make test
-    ./message-sender-test
+   ./message-sender-test
 
 4. **Clean the build**:
    ```bash
