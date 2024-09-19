@@ -59,10 +59,10 @@ The executable `./message-sender` requires three command-line arguments:
 
 This command will send 5 messages, each with a payload length of 10 bytes, using a channel width of 20 bytes. 
 
-### Logging
+## Logging
 The application will generate log files in the `build/log` directory. Each log file will contain the messages that are "sent" (logged) during execution.
 
-### Usage
+## Usage
 1. **Build the project**:
    ```bash
    make
