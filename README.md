@@ -68,7 +68,7 @@ The application will generate log files in the `build/log` directory. Each log f
    make
 2. **Run the executable**:
    ```bash
-   ./message-sender
+   ./message-sender <numMessages> <payloadLength> <channelWidth>
 
 3. **Run tests**:
    ```bash
